@@ -1,0 +1,607 @@
+
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="أوريلافا تجربة إقامة فاخرة بتفاصيل استثنائية">
+  <title>أوريلافا | فندق وأجنحة فاخرة</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <!-- شريط المعلومات -->
+  <div class="top-bar">
+    <div class="container top-bar-inner">
+      <span>إقامة استثنائية تبدأ من هنا</span>
+      <span>نموذج تصميم لمعرض الأعمال — ليس فندقًا حقيقيًا</span>
+    </div>
+  </div>
+
+  <!-- القائمة الرئيسية -->
+  <header class="site-header" id="header">
+    <div class="container nav-wrapper">
+
+      <a href="#home" class="logo" aria-label="أوريلافا الرئيسية">
+        <span class="logo-symbol">✦</span>
+        <span>
+          <strong>أوريلافا</strong>
+          <small>ORILAVA HOTEL</small>
+        </span>
+      </a>
+
+      <nav class="main-nav" id="mainNav" aria-label="القائمة الرئيسية">
+        <a href="#home" class="nav-link active">الرئيسية</a>
+        <a href="#about" class="nav-link">عن الفندق</a>
+        <a href="#rooms" class="nav-link">الغرف والأجنحة</a>
+        <a href="#services" class="nav-link">الخدمات</a>
+        <a href="#gallery" class="nav-link">المعرض</a>
+        <a href="#contact" class="nav-link">تواصل معنا</a>
+      </nav>
+
+      <div class="nav-actions">
+        <a href="#booking" class="btn btn-gold nav-book-btn">احجز إقامتك</a>
+        <button class="menu-toggle" id="menuToggle" type="button"
+                aria-label="فتح القائمة" aria-expanded="false">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+
+    </div>
+  </header>
+
+  <main>
+
+    <!-- الواجهة الرئيسية -->
+    <section class="hero" id="home">
+      <div class="hero-bg"></div>
+      <div class="hero-overlay"></div>
+
+      <div class="container hero-content">
+        <span class="eyebrow light">مرحبًا بك في عالم أوريلافا</span>
+
+        <h1>
+          حيث تبدأ
+          <span>لحظات الرفاهية</span>
+        </h1>
+
+        <p>
+          استمتع بإقامة راقية تجمع بين الأناقة والهدوء
+          واكتشف تجربة ضيافة صُممت لتبقى في الذاكرة
+        </p>
+
+        <div class="hero-buttons">
+          <a href="#rooms" class="btn btn-gold">اكتشف أجنحتنا</a>
+          <a href="#about" class="btn btn-outline-light">اكتشف أوريلافا</a>
+        </div>
+
+        <div class="hero-scroll">
+          <span>اكتشف المزيد</span>
+          <span class="scroll-line"></span>
+        </div>
+      </div>
+    </section>
+
+    <!-- نموذج الحجز -->
+    <section class="booking-section" id="booking">
+      <div class="container">
+        <div class="booking-panel">
+          <div class="booking-heading">
+            <span>خطط لإقامتك</span>
+            <h2>ابحث عن إقامتك المثالية</h2>
+          </div>
+
+          <form id="bookingForm" class="booking-form">
+            <div class="form-field">
+              <label for="checkIn">تاريخ الوصول</label>
+              <input type="date" id="checkIn" required>
+            </div>
+
+            <div class="form-field">
+              <label for="checkOut">تاريخ المغادرة</label>
+              <input type="date" id="checkOut" required>
+            </div>
+
+            <div class="form-field">
+              <label for="guests">عدد الضيوف</label>
+              <select id="guests" required>
+                <option value="1">ضيف واحد</option>
+                <option value="2" selected>ضيفان</option>
+                <option value="3">3 ضيوف</option>
+                <option value="4">4 ضيوف</option>
+                <option value="5">5 ضيوف</option>
+                <option value="6">6 ضيوف</option>
+              </select>
+            </div>
+
+            <button type="submit" class="btn btn-gold booking-submit">
+              تحقق من الإقامة
+            </button>
+          </form>
+
+          <p class="demo-note">
+            نموذج تجريبي لعرض تصميم الموقع ولا ينفذ حجوزات فعلية
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- عن الفندق -->
+    <section class="section about-section" id="about">
+      <div class="container about-grid">
+
+        <div class="about-images">
+          <div class="about-image-main">
+            <img
+              src="https://images.unsplash.com/photo-1566073771259-6a8506099945?auto=format&fit=crop&w=1100&q=85"
+              alt="مساحة فندقية فاخرة"
+              loading="lazy">
+          </div>
+
+          <div class="about-image-small">
+            <img
+              src="https://images.unsplash.com/photo-1582719508461-905c673771fd?auto=format&fit=crop&w=650&q=85"
+              alt="غرفة فندقية أنيقة"
+              loading="lazy">
+          </div>
+
+          <div class="about-badge">
+            <strong>✦</strong>
+            <span>تفاصيل تصنع الفرق</span>
+          </div>
+        </div>
+
+        <div class="about-content">
+          <span class="eyebrow">من نحن</span>
+          <h2 class="section-title">
+            أكثر من إقامة
+            <span>إنها تجربة استثنائية</span>
+          </h2>
+
+          <p>
+            في أوريلافا نؤمن أن الرفاهية الحقيقية تكمن في التفاصيل
+            من الأجواء الهادئة إلى المساحات المصممة بعناية
+            نقدم تصورًا لعالم ضيافة يوازن بين الفخامة والراحة
+          </p>
+
+          <p>
+            كل ركن يحكي قصة من الأناقة وكل لحظة تمنحك فرصة
+            للاستمتاع بتجربة مختلفة
+          </p>
+
+          <div class="about-highlights">
+            <div class="highlight-item">
+              <span class="highlight-icon">✧</span>
+              <div>
+                <h3>أناقة استثنائية</h3>
+                <p>تصاميم راقية وتفاصيل مدروسة</p>
+              </div>
+            </div>
+
+            <div class="highlight-item">
+              <span class="highlight-icon">✧</span>
+              <div>
+                <h3>راحة بلا حدود</h3>
+                <p>أجواء هادئة ومساحات مميزة</p>
+              </div>
+            </div>
+          </div>
+
+          <a href="#services" class="text-link">
+            اكتشف خدماتنا <span>←</span>
+          </a>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- الغرف والأجنحة -->
+    <section class="section rooms-section" id="rooms">
+      <div class="container">
+
+        <div class="section-heading centered">
+          <span class="eyebrow">إقامة تليق بك</span>
+          <h2 class="section-title">
+            غرف وأجنحة <span>استثنائية</span>
+          </h2>
+          <p>
+            اكتشف مجموعة مختارة من المساحات الفاخرة
+            صُممت لتمنحك تجربة إقامة لا تُنسى
+          </p>
+        </div>
+
+        <div class="rooms-grid">
+
+          <article class="room-card">
+            <div class="room-image">
+              <img
+                src="https://images.unsplash.com/photo-1611892440504-42a792e24d32?auto=format&fit=crop&w=950&q=85"
+                alt="غرفة ديلوكس"
+                loading="lazy">
+              <span class="room-tag">الأكثر طلبًا</span>
+            </div>
+
+            <div class="room-info">
+              <div class="room-meta">
+                <span>شخصان</span>
+                <span>سرير مزدوج</span>
+                <span>إطلالة مميزة</span>
+              </div>
+              <h3>غرفة ديلوكس</h3>
+              <p>
+                مساحة أنيقة تجمع بين الراحة العصرية
+                والتصميم الفاخر
+              </p>
+              <a href="#booking" class="room-link">
+                استكشف الإقامة <span>←</span>
+              </a>
+            </div>
+          </article>
+
+          <article class="room-card">
+            <div class="room-image">
+              <img
+                src="https://images.unsplash.com/photo-1590490360182-c33d57733427?auto=format&fit=crop&w=950&q=85"
+                alt="جناح جونيور"
+                loading="lazy">
+              <span class="room-tag">تجربة مميزة</span>
+            </div>
+
+            <div class="room-info">
+              <div class="room-meta">
+                <span>شخصان</span>
+                <span>جلسة خاصة</span>
+                <span>مساحة واسعة</span>
+              </div>
+              <h3>جناح جونيور</h3>
+              <p>
+                تصميم عصري ومساحات رحبة
+                لإقامة أكثر خصوصية
+              </p>
+              <a href="#booking" class="room-link">
+                استكشف الإقامة <span>←</span>
+              </a>
+            </div>
+          </article>
+
+          <article class="room-card">
+            <div class="room-image">
+              <img
+                src="https://images.unsplash.com/photo-1566665797739-1674de7a421a?auto=format&fit=crop&w=950&q=85"
+                alt="الجناح الملكي"
+                loading="lazy">
+              <span class="room-tag">قمة الفخامة</span>
+            </div>
+
+            <div class="room-info">
+              <div class="room-meta">
+                <span>4 ضيوف</span>
+                <span>جناح واسع</span>
+                <span>رفاهية خاصة</span>
+              </div>
+              <h3>الجناح الملكي</h3>
+              <p>
+                تفاصيل استثنائية ومساحات فاخرة
+                لأجمل لحظات الإقامة
+              </p>
+              <a href="#booking" class="room-link">
+                استكشف الإقامة <span>←</span>
+              </a>
+            </div>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- بانر فخم -->
+    <section class="experience-banner">
+      <div class="experience-overlay"></div>
+      <div class="container experience-content">
+        <span class="eyebrow light">عالم من التميز</span>
+        <h2>رفاهية تُشعر بها في كل لحظة</h2>
+        <p>
+          من اللحظة الأولى تبدأ حكاية من الراحة والأناقة
+        </p>
+        <a href="#gallery" class="btn btn-outline-light">
+          شاهد معرض الصور
+        </a>
+      </div>
+    </section>
+
+    <!-- الخدمات -->
+    <section class="section services-section" id="services">
+      <div class="container">
+
+        <div class="section-heading centered">
+          <span class="eyebrow">خدماتنا</span>
+          <h2 class="section-title">
+            تفاصيل تجعل إقامتك <span>أجمل</span>
+          </h2>
+          <p>
+            تجربة متكاملة من الراحة والرفاهية
+            مع مجموعة من المرافق والخدمات الراقية
+          </p>
+        </div>
+
+        <div class="services-grid">
+
+          <article class="service-card">
+            <div class="service-icon">♨</div>
+            <h3>السبا والاسترخاء</h3>
+            <p>أجواء هادئة ومساحات مخصصة للاسترخاء وتجديد النشاط</p>
+          </article>
+
+          <article class="service-card">
+            <div class="service-icon">✦</div>
+            <h3>مطاعم راقية</h3>
+            <p>تجربة طعام مميزة تجمع بين النكهات والأجواء الأنيقة</p>
+          </article>
+
+          <article class="service-card">
+            <div class="service-icon">♧</div>
+            <h3>مسبح فاخر</h3>
+            <p>لحظات من الراحة في أجواء مفتوحة ومريحة</p>
+          </article>
+
+          <article class="service-card">
+            <div class="service-icon">◇</div>
+            <h3>مركز اللياقة</h3>
+            <p>مساحات عصرية مخصصة للحركة والنشاط اليومي</p>
+          </article>
+
+          <article class="service-card">
+            <div class="service-icon">✧</div>
+            <h3>قاعات المناسبات</h3>
+            <p>مساحات أنيقة للاحتفالات واللقاءات الخاصة</p>
+          </article>
+
+          <article class="service-card">
+            <div class="service-icon">☼</div>
+            <h3>خدمة الضيوف</h3>
+            <p>اهتمام بالتفاصيل لتكون كل لحظة أكثر راحة</p>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- معرض الصور -->
+    <section class="section gallery-section" id="gallery">
+      <div class="container">
+
+        <div class="section-heading centered">
+          <span class="eyebrow">معرض الصور</span>
+          <h2 class="section-title">
+            لمحات من <span>عالم أوريلافا</span>
+          </h2>
+          <p>صور ملهمة تعكس أجواء الضيافة الراقية</p>
+        </div>
+
+        <div class="gallery-grid">
+
+          <button class="gallery-item gallery-large" type="button"
+                  aria-label="عرض صورة المسبح">
+            <img
+              src="https://images.unsplash.com/photo-1571896349842-33c89424de2d?auto=format&fit=crop&w=1200&q=85"
+              alt="مسبح فندقي فاخر"
+              loading="lazy">
+            <span class="gallery-caption">مساحات الاسترخاء</span>
+          </button>
+
+          <button class="gallery-item" type="button"
+                  aria-label="عرض صورة الغرفة">
+            <img
+              src="https://images.unsplash.com/photo-1618773928121-c32242e63f39?auto=format&fit=crop&w=900&q=85"
+              alt="غرفة فندقية"
+              loading="lazy">
+            <span class="gallery-caption">غرف أنيقة</span>
+          </button>
+
+          <button class="gallery-item" type="button"
+                  aria-label="عرض صورة المطعم">
+            <img
+              src="https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?auto=format&fit=crop&w=900&q=85"
+              alt="مطعم راقٍ"
+              loading="lazy">
+            <span class="gallery-caption">تجربة الطعام</span>
+          </button>
+
+          <button class="gallery-item" type="button"
+                  aria-label="عرض صورة الاستراحة">
+            <img
+              src="https://images.unsplash.com/photo-1542314831-068cd1dbfeeb?auto=format&fit=crop&w=900&q=85"
+              alt="واجهة فندق فاخر"
+              loading="lazy">
+            <span class="gallery-caption">أجواء أوريلافا</span>
+          </button>
+
+          <button class="gallery-item" type="button"
+                  aria-label="عرض صورة الجناح">
+            <img
+              src="https://images.unsplash.com/photo-1591088398332-8a7791972843?auto=format&fit=crop&w=900&q=85"
+              alt="جناح فندقي"
+              loading="lazy">
+            <span class="gallery-caption">أجنحة فاخرة</span>
+          </button>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- قسم الدعوة للحجز -->
+    <section class="cta-section">
+      <div class="container cta-content">
+        <div>
+          <span class="eyebrow light">تجربة تستحق الاكتشاف</span>
+          <h2>اجعل إقامتك القادمة استثنائية</h2>
+          <p>اكتشف جمال التفاصيل في أوريلافا</p>
+        </div>
+        <a href="#booking" class="btn btn-dark">استكشف خيارات الإقامة</a>
+      </div>
+    </section>
+
+    <!-- التواصل -->
+    <section class="section contact-section" id="contact">
+      <div class="container contact-grid">
+
+        <div class="contact-content">
+          <span class="eyebrow">تواصل معنا</span>
+          <h2 class="section-title">
+            يسعدنا <span>التواصل معك</span>
+          </h2>
+
+          <p>
+            هل لديك استفسار عن الغرف أو الخدمات
+            يمكنك تجربة نموذج التواصل التالي
+          </p>
+
+          <div class="contact-details">
+            <div class="contact-detail">
+              <span class="detail-icon">✉</span>
+              <div>
+                <strong>البريد الإلكتروني</strong>
+                <span>نموذج تجريبي — لا يوجد بريد استقبال فعلي</span>
+              </div>
+            </div>
+
+            <div class="contact-detail">
+              <span class="detail-icon">⌖</span>
+              <div>
+                <strong>الموقع</strong>
+                <span>وجهة افتراضية لأغراض التصميم</span>
+              </div>
+            </div>
+
+            <div class="contact-detail">
+              <span class="detail-icon">✦</span>
+              <div>
+                <strong>الحجوزات</strong>
+                <span>غير متاحة الموقع نموذج أعمال فقط</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="contact-form-card">
+          <h3>أرسل رسالة تجريبية</h3>
+          <p>املأ النموذج لاستعراض تفاعل الواجهة</p>
+
+          <form id="contactForm">
+            <div class="form-row">
+              <div class="form-field">
+                <label for="fullName">الاسم الكامل</label>
+                <input type="text" id="fullName"
+                       placeholder="أدخل اسمك" required>
+              </div>
+
+              <div class="form-field">
+                <label for="email">البريد الإلكتروني</label>
+                <input type="email" id="email"
+                       placeholder="example@email.com" required>
+              </div>
+            </div>
+
+            <div class="form-field">
+              <label for="subject">الموضوع</label>
+              <input type="text" id="subject"
+                     placeholder="موضوع الرسالة" required>
+            </div>
+
+            <div class="form-field">
+              <label for="message">رسالتك</label>
+              <textarea id="message" rows="5"
+                        placeholder="اكتب رسالتك هنا" required></textarea>
+            </div>
+
+            <button type="submit" class="btn btn-gold full-width">
+              إرسال تجريبي
+            </button>
+
+            <p class="form-feedback" id="contactFeedback"
+               role="status" aria-live="polite"></p>
+          </form>
+        </div>
+
+      </div>
+    </section>
+
+  </main>
+
+  <!-- الفوتر -->
+  <footer class="site-footer">
+    <div class="container">
+
+      <div class="footer-grid">
+
+        <div class="footer-about">
+          <a href="#home" class="logo footer-logo">
+            <span class="logo-symbol">✦</span>
+            <span>
+              <strong>أوريلافا</strong>
+              <small>ORILAVA HOTEL</small>
+            </span>
+          </a>
+
+          <p>
+            نموذج موقع فندقي فاخر صُمم لعرض تجربة
+            مستخدم راقية وتصميم ويب احترافي
+          </p>
+        </div>
+
+        <div class="footer-links">
+          <h3>روابط سريعة</h3>
+          <a href="#home">الرئيسية</a>
+          <a href="#about">عن الفندق</a>
+          <a href="#rooms">الغرف والأجنحة</a>
+          <a href="#services">الخدمات</a>
+        </div>
+
+        <div class="footer-links">
+          <h3>استكشف</h3>
+          <a href="#gallery">معرض الصور</a>
+          <a href="#booking">الإقامة</a>
+          <a href="#contact">تواصل معنا</a>
+        </div>
+
+        <div class="footer-news">
+          <h3>أوريلافا</h3>
+          <p>
+            هذا الموقع مشروع تجريبي لمعرض الأعمال
+            ولا يمثل فندقًا قائمًا أو خدمة حجز حقيقية
+          </p>
+        </div>
+
+      </div>
+
+      <div class="footer-bottom">
+        <p>© <span id="year"></span> أوريلافا — نموذج تصميم</p>
+        <p>تصميم وتطوير ويب احترافي</p>
+      </div>
+
+    </div>
+  </footer>
+
+  <!-- عارض الصور -->
+  <div class="lightbox" id="lightbox" aria-hidden="true"
+       role="dialog" aria-modal="true" aria-label="عارض الصور">
+    <button type="button" class="lightbox-close"
+            id="lightboxClose" aria-label="إغلاق الصورة">×</button>
+    <img id="lightboxImage" src="" alt="">
+  </div>
+
+  <!-- العودة للأعلى -->
+  <button type="button" class="back-to-top" id="backToTop"
+          aria-label="العودة لأعلى الصفحة">↑</button>
+
+  <script src="script.js"></script>
+</body>
+</html>
